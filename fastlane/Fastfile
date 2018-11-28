@@ -5,6 +5,17 @@ end
 
 platform :ios do
    # iOS Lanes
+   desc "Description of what the lane does"
+    lane :generate_ipa_develop do
+      build_ios_app(
+        configuration: "Debug",
+        scheme: "Test",
+        clean: true,
+        export_method: 'development',
+        output_directory: "~/Desktop", # Destination directory. Defaults to current directory.
+        output_name: "fastlane_jenkins.ipa",
+      )
+    end
 end
 
 platform :android do
