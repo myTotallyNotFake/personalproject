@@ -11,6 +11,7 @@ platform :ios do
       project: "./ios/fastlaneProj.xcodeproj",
       scheme: "fastlaneProj",
     )
+    end
 end
 
 platform :android do
