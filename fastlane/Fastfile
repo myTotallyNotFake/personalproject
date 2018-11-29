@@ -7,7 +7,7 @@ platform :ios do
    # iOS Lanes
    desc "Description of what the lane does"
     lane :generate_ipa_develop do
-    xcclean(
+    xcbuild(
       project: "./ios/fastlaneProj.xcodeproj",
       scheme: "fastlaneProj",
     )
