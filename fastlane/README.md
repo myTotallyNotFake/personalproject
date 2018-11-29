@@ -15,6 +15,15 @@ Install _fastlane_ using
 or alternatively using `brew cask install fastlane`
 
 # Available Actions
+## iOS
+### ios generate_ipa_develop
+```
+fastlane ios generate_ipa_develop
+```
+Description of what the lane does
+
+----
+
 ## Android
 ### android build
 ```
