@@ -7,9 +7,15 @@ platform :ios do
    # iOS Lanes
    desc "Description of what the lane does"
     lane :generate_ipa_develop do
-    xcbuild(
+    build_ios_app(
+
       project: "./ios/fastlaneProj.xcodeproj",
       scheme: "fastlaneProj",
+      configuration: "Debug",
+      clean: true,
+      export_method: 'development',
+      output_directory: "~/Desktop", # Destination directory. Defaults to current directory.
+      output_name: "fastlane_jenkins.ipa",
     )
     end
 end
